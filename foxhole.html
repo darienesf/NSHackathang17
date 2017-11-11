@@ -8,26 +8,37 @@
   <title> Social Experiment Pre-Alpha 0.01 </title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="prefetch" href= "main.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script type="text/javascript" src="userpage.js"></script>
+  <link href="/fonts/directory.nocache.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
   <style>
   body{
     background: url("https://pbs.twimg.com/profile_images/467317981534371840/4fm8ElCF.png");
-    color: red;
+    background-color: black;
   }
 
-  h1{
+  h1
+  {
+    font-size: 8em;
     text-align: center;
+    background-color: #008080;
+    width: auto;
     color: white;
   }
 
-  #nav1{
-    text-align: center;
+  #nav
+  {
+    font-size: 3.3em;
+    padding: 0;
+    text-align: auto;
     color: white;
-    background-color: teal;
   }
 
-  #skullimg{
+  #nerdimg
+  {
     align-self: auto;
+    position: absolute;
   }
 
 </style>
@@ -36,17 +47,36 @@
 <body>
 
   <h1> Welcome to the Fox Hole! </h1>
-  <nav1 id="nav1">
-    <ul>
-      <li><a href="#">Choose your fighting style!</a></li>
-      <li><a href="#">Find friends!</a></li>
-      <li><a href="#">Ask, mortal!</a></li>
-    </ul>
-  </nav>
- <p> <a href="http://www.Duckduckgo.com/TorBrowser"> </p>
-  <img src="https://cdn3.iconfinder.com/data/icons/emoticon-emoji/30/emoticon-nerd-7-512.png" id="skullimg" height="300" width="300">
-</a>
 
+  <div id="nav">
+
+<ul>
+
+    <li><a href="#">boom!</a> </li>
+      <li><a href="#">boom?</a> </li>
+        <li><a href="#">boom!?</a> </li>
+</ul>
+<div id="nav-button">
+
+  <span></span>
+  <span></span>
+  <span></span>
+
+</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+
+<script>
+$(document).ready(function(){
+  $('#nav-button').click(function(){
+    $('#nav').toggleClass('visible');
+
+  });
+});
+</script>
 </body>
 
 </html>
